@@ -30,13 +30,7 @@ folders.forEach((folder) => {
     img.src = `${basePath}.jpg`; // Try .jpg first
     img.alt = `Memory ${i}`;
     img.classList.add("gallery-img");
-
-    // If .jpg fails, try .jpeg
-    img.onerror = () => {
-      img.onerror = () => img.remove(); // If both fail, remove
-      img.src = `${basePath}.jpeg`;
-    };
-
+    
     // Append only when loaded (optional for better UX)
     img.onload = () => {
       galleryContainer.appendChild(img);
