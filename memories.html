@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Memories ❤️</title>
+  <link rel="stylesheet" href="gift.css" />
+</head>
+
+<body>
+
+  <audio id="bg-music" loop>
+    <source src="Music/Yaaradiyo-MassTamilan.org.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+  <!-- Instruction Popup -->
+  <div id="music-popup" class="music-popup">
+    🎁 Click anywhere to start/pause the surprise music 🎵
+  </div>
+
+  <!-- Optional: Music icon after playing -->
+  <div id="music-icon">🎶 Music Playing...</div>
+
+  <script>
+    let isFirstInteraction = true;
+
+    window.addEventListener('load', () => {
+      const popup = document.getElementById('music-popup');
+      popup.style.display = 'block';
+    });
+
+    document.addEventListener('click', () => {
+      const audio = document.getElementById("bg-music");
+      const icon = document.getElementById("music-icon");
+      const popup = document.getElementById("music-popup");
+
+      // Hide popup on first interaction
+      if (popup) popup.style.display = 'none';
+
+      // Enable and toggle music
+      if (isFirstInteraction) {
+        audio.muted = false;
+        isFirstInteraction = false;
+      }
+
+      if (audio.paused) {
+        audio.play();
+        icon.style.display = 'block';
+      } else {
+        audio.pause();
+        icon.style.display = 'none';
+      }
+    });
+  </script>
+
+  <div class="gallery-page">
+    <h1>Our Beautiful Memories 📸</h1>
+    <div class="gallery">
+      <!-- Add your 40+ photos here -->
+     
+
+
+    </div>
+    <section class="video-memories">
+      <h2>Unforgettable Memories 🎥</h2>
+
+      <div class="video-grid">
+        <video controls>
+          <source src="videos/Video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video controls>
+          <source src="videos/Video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+
+        <video controls>
+          <source src="videos/Video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+
+        <video controls>
+          <source src="videos/Video4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+
+        <video controls>
+          <source src="videos/Video5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+
+        <video controls>
+          <source src="videos/Video6.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+
+        <video controls>
+          <source src="videos/Video7.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video controls>
+          <source src="videos/Video8.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video controls>
+          <source src="videos/Video9.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video controls>
+          <source src="videos/Video10.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video controls>
+          <source src="videos/Video11.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+      </div>
+    </section>
+
+    <script>
+  setInterval(() => {
+    const msg = document.createElement('div');
+    const msg2 = document.createElement('div');
+
+    msg.className = 'float-msg';
+    msg2.className = 'float-msg';
+
+    msg.innerText = "🎈 Happy Birthday Rathiiii ma ❤️";
+    msg2.innerText = "😘❤️ I LOVE YOU MAA ❤️😘";
+
+    msg.style.left = Math.random() * 90 + '%';
+    msg2.style.left = Math.random() * 90 + '%';
+
+    document.body.appendChild(msg);
+    document.body.appendChild(msg2);
+
+    // Correct removal after 4 seconds
+    setTimeout(() => {
+      msg.remove();
+      msg2.remove();
+    }, 4000);
+  }, 1200);
+</script>
+
+
+    <div class="back-btn">
+      <a href="first.html" class="btn">← Back to Home</a>
+      <a href="wish.html" class="btn">Next: Birthday Wish 💌</a>
+    </div>
+  </div>
+  <script src="js/gallery.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Rathiii ❤️</title>
+  <link rel="stylesheet" href="gift.css" />
+  <style>
+    body {
+  background-image: url('Photo1/Photo10.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: contain; /* ✅ This shows the full image */
+  background-color: #85a9b0; /* fallback background */
+  color: #ffffff;
+}
+  </style>
+</head>
+
+<body>
+ <audio id="bg-music" loop>
+  <source src="Music/happy-birthday-254480.mp3" type="audio/mp3">
+  Your browser does not support the audio tag.
+</audio>
+<!-- Instruction Popup -->
+<div id="music-popup" class="music-popup">
+  🎁 Click anywhere to start/pause the surprise music 🎵
+</div>
+
+<!-- Optional: Music icon after playing -->
+<div id="music-icon">🎶 Music Playing...</div>
+
+<script>
+  let isFirstInteraction = true;
+
+  window.addEventListener('load', () => {
+    const popup = document.getElementById('music-popup');
+    popup.style.display = 'block';
+  });
+
+  document.addEventListener('click', () => {
+    const audio = document.getElementById("bg-music");
+    const icon = document.getElementById("music-icon");
+    const popup = document.getElementById("music-popup");
+
+    // Hide popup on first interaction
+    if (popup) popup.style.display = 'none';
+
+    // Enable and toggle music
+    if (isFirstInteraction) {
+      audio.muted = false;
+      isFirstInteraction = false;
+    }
+
+    if (audio.paused) {
+      audio.play();
+      icon.style.display = 'block';
+    } else {
+      audio.pause();
+      icon.style.display = 'none';
+    }
+  });
+</script>
+
+<!-- Floating music note icon -->
+<!-- <div id="music-icon">🎵 Music Playing</div>
+<script>
+  let isFirstInteraction = true;
+
+  document.addEventListener('click', () => {
+    const audio = document.getElementById('bg-music');
+    const icon = document.getElementById('music-icon');
+
+    // Unmute only once
+    if (isFirstInteraction) {
+      audio.muted = false;
+      isFirstInteraction = false;
+    }
+
+    // Toggle play/pause
+    if (audio.paused) {
+      audio.play();
+      icon.style.display = 'block';
+    } else {
+      audio.pause();
+      icon.style.display = 'none';
+    }
+  });
+
+</script> -->
+
+  <h1 class="birthday-heading">🎉 Happy Birthday Rathiiiiiiiiiiii ma ❤️😍😘 🎂</h1>
+<div id="floating-wishes"></div>
+  <div id="main-content">
+    <div class="floating-text">
+       I love you sooo sooo much Rathiiiiiiiiiiii❤️❤️😍😍😘😘
+     ❤️😍😘
+    </div>
+    <!-- your existing page content (timer, gallery, wish etc.) here -->
+  </div>
+
+ <div class="timer-container">
+  <!-- Left side -->
+  <div class="timer-left">
+    <div class="timer-circle" style="background-image: url('photo3/Photo37.jpg');">
+      <h2 id="years">0</h2><p>Years</p>
+    </div>
+    <div class="line-with-hearts">
+  <span>❤️</span><span>💖</span><span>💘</span><span>💕</span><span>💞</span>
+</div>
+
+    <div class="timer-circle" style="background-image: url('photo3/photo36.jpg');">
+      <h2 id="weeks">0</h2><p>Weeks</p>
+    </div>
+    <div class="line-with-hearts">
+  <span>❤️</span><span>💖</span><span>💘</span><span>💕</span><span>💞</span>
+</div>
+
+    <div class="timer-circle" style="background-image: url('photo3/photo39.jpg');">
+      <h2 id="days">0</h2><p>Days</p>
+    </div>
+    <div class="line-with-hearts">
+  <span>❤️</span><span>💖</span><span>💘</span><span>💕</span><span>💞</span>
+</div>
+
+  </div>
+
+  <!-- Middle: Her image and greeting -->
+  <div class="hero">
+    <h1 class="main-heading">Hi Rathii ❤️</h1>
+    <p class="sub-heading">You’ve been a beautiful part of this world for... and Ne enakku kidachathukku na remba lucky maa....</p>
+    <!-- Navigation buttons -->
+  </div>
+
+  <!-- Right side -->
+  <div class="timer-right">
+    <div class="timer-circle" style="background-image: url('photo8/photo93.jpg');">
+      <h2 id="hours">0</h2><p>Hours</p>
+    </div>
+    <div class="line-with-hearts">
+  <span>❤️</span><span>💖</span><span>💘</span><span>💕</span><span>💞</span>
+</div>
+
+    <div class="timer-circle" style="background-image: url('photo7/photo80.jpg');">
+      <h2 id="minutes">0</h2><p>Minutes</p>
+    </div>
+    <div class="line-with-hearts">
+  <span>❤️</span><span>💖</span><span>💘</span><span>💕</span><span>💞</span>
+</div>
+
+    <div class="timer-circle" style="background-image: url('photo7/photo82.jpg');">
+      <h2 id="seconds">0</h2><p>Seconds</p>
+    </div>
+    <div class="line-with-hearts">
+  <span>❤️</span><span>💖</span><span>💘</span><span>💕</span><span>💞</span>
+</div>
+
+  </div>
+  
+
+</div>
+
+
+    <div class="nav-buttons">
+      <a href="memories.html" class="btn">View Our Memories 📸</a>
+      <a href="wish.html" class="btn">Your Birthday Wish 💌</a>
+    </div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="music/song.mp3" type="audio/mp3" />
+  </audio>
+
+  
+  <script src="js/timer.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
