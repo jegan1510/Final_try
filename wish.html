@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Birthday Wish to You ❤️</title>
   <link rel="stylesheet" href="gift.css" />
   <style>
-   body {
-  background-image: url('Photo5/Photo56.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: contain; /* ✅ This shows the full image */
-  background-color: #dab2e8; /* fallback background */
-}
-</style>
+    body {
+      background-image: url('Photo5/Photo56.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: contain;
+      /* ✅ This shows the full image */
+      background-color: #dab2e8;
+      /* fallback background */
+    }
+  </style>
 </head>
+
 <body>
   <h1 class="birthday-heading">🎉 Happy Birthday Rathiiiiiiiiiiiiiiiiiiii ma ❤️😍😘 🎂</h1>
-<div id="typed-wish"></div>
-<div id="floating-wishes"></div>
-<button onclick="toggleWish()" class="btn">🎁 Click for Surprise</button>
+  <div id="typed-wish"></div>
+  <div id="floating-wishes"></div>
+  <button onclick="toggleWish()" class="btn">🎁 Click for Surprise</button>
 
-<div id="popup" class="popup-box">
- ❤️🎂 Happy Birthday Pondatiii ❤️ You are the sunshine of my life 🌞 Eppavum ipdiye sirichite iru maaa 😊😘
-</div>
+  <div id="popup" class="popup-box">
+    ❤️🎂 Happy Birthday Pondatiii ❤️ You are the sunshine of my life 🌞 Eppavum ipdiye sirichite iru maaa 😊😘
+  </div>
 
-<div id="main-content"">
-  <div class="floating-text">
+  <div id="main-content"">
+  <div class=" floating-text">
     I love you sooo sooo sooo much Rathiiiiiiiiiiii❤️❤️😍😍😘😘
-     ❤️😍😘
+    ❤️😍😘
   </div>
   <!-- your existing page content (timer, gallery, wish etc.) here -->
-</div>
+  </div>
 
   <div class="wish-page">
     <h1>Happy Birthday, My Love 🎂</h1>
     <p class="wish-text">
-  From the first moment we met, na nenachi kooda pakala nee en life-la oru part-a varuvenu.  
-  But you’ve brought so much light and love into my life.  
-  Today is your day, and I want you to feel just how deeply you're loved.  
-  You're the reason behind my smile every single day.  
-  I’m so grateful to walk through life with you. 💖  
-  <br /><br />
-  Oru chinna video message keela irukku ma, click pannitu paaru 😘  
-  Video kevalama than irukkum adjust panniko night eduthathu konjam kevalama than iruppen ok va😂😂
-  <br />
-  And... ❤️I love you Forever maa.... ❤️ ummmaaaaaaaaaa😘
-</p>
+      From the first moment we met, na nenachi kooda pakala nee en life-la oru part-a varuvenu.
+      But you’ve brought so much light and love into my life.
+      Today is your day, and I want you to feel just how deeply you're loved.
+      You're the reason behind my smile every single day.
+      I’m so grateful to walk through life with you. 💖
+      <br /><br />
+      Oru chinna video message keela irukku ma, click pannitu paaru 😘
+      Video kevalama than irukkum adjust panniko night eduthathu konjam kevalama than iruppen ok va😂😂
+      <br />
+      And... ❤️I love you Forever maa.... ❤️ ummmaaaaaaaaaa😘
+    </p>
 
     <div class="video-section">
       <h2>💌 My Voice Message For You</h2>
@@ -66,40 +70,41 @@
   <canvas id="confetti"></canvas>
   <script src="js/confetti.js"></script>
   <script>
-  const message = "🎂 Happy Birthday Rathiiiiiiiiiiiiiiiiiiii ma ❤️❤️❤️ You are my world 🌍, my smile 😊, my forever 💑";
-  let i = 0;
-  const target = document.getElementById("typed-wish");
+    const message = "🎂 Happy Birthday Rathiiiiiiiiiiiiiiiiiiii ma ❤️❤️❤️ You are my world 🌍, my smile 😊, my forever 💑";
+    let i = 0;
+    const target = document.getElementById("typed-wish");
 
-  function typeWriter() {
-    if (i < message.length) {
-      target.innerHTML += message.charAt(i);
-      i++;
-      setTimeout(typeWriter, 60);
+    function typeWriter() {
+      if (i < message.length) {
+        target.innerHTML += message.charAt(i);
+        i++;
+        setTimeout(typeWriter, 60);
+      }
     }
-  }
 
-  window.onload = typeWriter;
-</script>
-<script>
-  setInterval(() => {
-    const msg = document.createElement('div');
-    msg.className = 'float-msg';
-    msg.innerText = "🎈 Happy Birthday Rathiiii ma ❤️";
-    msg.innerText = "😘❤️I LOVE YOU MAA❤️😘";
-    msg.style.left = Math.random() * 90 + '%';
-    document.body.appendChild(msg);
-    setTimeout(() => msg.remove(), 4000);
-  }, 1200);
-</script>
+    window.onload = typeWriter;
+  </script>
+  <script>
+    setInterval(() => {
+      const msg = document.createElement('div');
+      msg.className = 'float-msg';
+      msg.innerText = "🎈 Happy Birthday Rathiiii ma ❤️";
+      msg.innerText = "😘❤️I LOVE YOU MAA❤️😘";
+      msg.style.left = Math.random() * 90 + '%';
+      document.body.appendChild(msg);
+      setTimeout(() => msg.remove(), 4000);
+    }, 1200);
+  </script>
 
-<script>
-  function toggleWish() {
-    const popup = document.getElementById("popup");
-    // Toggle visibility using class
-    popup.style.display = (popup.style.display === "block") ? "none" : "block";
-  }
-</script>
+  <script>
+    function toggleWish() {
+      const popup = document.getElementById("popup");
+      // Toggle visibility using class
+      popup.style.display = (popup.style.display === "block") ? "none" : "block";
+    }
+  </script>
 
 
 </body>
+
 </html>
