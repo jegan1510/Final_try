@@ -17,6 +17,7 @@ const folders = [
   { name: "Photo13", from: 144, to: 153 },
   { name: "Photo14", from: 154, to: 163 },
   { name: "Photo15", from: 164, to: 174 },
+  { name: "Photo16", from: 175, to: 182 },
 ];
 
 let galleryImages = [];
