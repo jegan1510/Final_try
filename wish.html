@@ -21,51 +21,6 @@
 </head>
 
 <body>
-
-   <audio id="bg-music" loop>
-    <source src="Music/Neeyum-Naanum.mp3" type="audio/mp3">
-    Your browser does not support the audio tag.
-  </audio>
-  <!-- Instruction Popup -->
-  <div id="music-popup" class="music-popup">
-    🎁 Click anywhere to start/pause the surprise music 🎵
-  </div>
-
-  <!-- Optional: Music icon after playing -->
-  <div id="music-icon">🎶 Music Playing...</div>
-
-  <script>
-    let isFirstInteraction = true;
-
-    window.addEventListener('load', () => {
-      const popup = document.getElementById('music-popup');
-      popup.style.display = 'block';
-    });
-
-    document.addEventListener('click', () => {
-      const audio = document.getElementById("bg-music");
-      const icon = document.getElementById("music-icon");
-      const popup = document.getElementById("music-popup");
-
-      // Hide popup on first interaction
-      if (popup) popup.style.display = 'none';
-
-      // Enable and toggle music
-      if (isFirstInteraction) {
-        audio.muted = false;
-        isFirstInteraction = false;
-      }
-
-      if (audio.paused) {
-        audio.play();
-        icon.style.display = 'block';
-      } else {
-        audio.pause();
-        icon.style.display = 'none';
-      }
-    });
-  </script>
-
   <h1 class="birthday-heading">🎉 Happy Birthday Rathiiiiiiiiiiiiiiiiiiii ma ❤️😍😘 🎂</h1>
   <div id="typed-wish"></div>
   <div id="floating-wishes"></div>
